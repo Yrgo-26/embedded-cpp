@@ -1,0 +1,91 @@
+# Bilaga B
+
+## Konfiguration med CMake i ESP-IDF
+
+### Katalogstruktur
+Anta att följande katalogstruktur används:
+
+```
+p02/
+├─ CMakeLists.txt
+├─ main/
+│  ├─ CMakeLists.txt
+│  ├─ include/
+│  │  ├─ driver/
+│  │  │  ├─ adc/
+│  │  │  │  ├─ esp32s3.hpp
+│  │  │  │  ├─ interface.hpp
+│  │  │  │  └─ stub.hpp
+│  │  │  ├─ factory/
+│  │  │  ├─ gpio/
+│  │  │  ├─ serial/
+│  │  │  ├─ tempsensor/
+│  │  │  └─ timer/
+│  │  └─ system/
+│  │     └─ logic/
+│  │        └─ logic.hpp
+│  ├─ source/
+│  │  ├─ driver/
+│  │  │  ├─ adc/
+│  │  │  │  └─ esp32s3.cpp
+│  │  │  ├─ factory/
+│  │  │  │  └─ esp32s3.cpp
+│  │  │  ├─ gpio/
+│  │  │  │  └─ esp32s3.cpp
+│  │  │  ├─ serial/
+│  │  │  │  └─ esp32s3.cpp
+│  │  │  ├─ tempsensor/
+│  │  │  │  └─ tmp36.cpp
+│  │  │  └─ timer/
+│  │  │     └─ esp32s3.cpp
+│  │  └─ main.cpp
+```
+
+---
+
+### Innehåll i `CMakeLists.txt`
+För ovanstående katalogstruktur kan `CMakeLists.txt` i roten se ut enligt nedan:
+
+```cmake
+cmake_minimum_required(VERSION 3.22)
+
+include($ENV{IDF_PATH}/tools/cmake/project.cmake)
+project(p02)
+
+```
+
+För ovanstående katalogstruktur kan `main/CMakeLists.txt` se ut enligt nedan:
+
+```cmake
+idf_component_register(
+    SRCS
+        "source/main.cpp"
+        "source/driver/adc/esp32s3.cpp"
+        "source/driver/factory/esp32s3.cpp"
+        "source/driver/gpio/esp32s3.cpp"
+        "source/driver/serial/esp32s3.cpp"
+        "source/driver/tempsensor/tmp36.cpp"
+        "source/driver/timer/esp32s3.cpp"
+    INCLUDE_DIRS
+        "include")
+
+```
+
+---
+
+### Förklaring
+* `SRCS` anger vilka källkodfiler (`.c` / `.cpp`) som ska kompileras.
+* `INCLUDE_DIRS` anger var headerfiler (`.hpp`) finns.
+
+Observera att:
+* Alla .cpp-filer måste listas i `SRCS`, annars kompileras de inte.
+* Katalogen `include/` fungerar som rot för `#include`.
+
+Exempel:
+
+```cpp
+#include "driver/gpio/interface.hpp"
+#include "system/logic/logic.hpp"
+```
+
+---
