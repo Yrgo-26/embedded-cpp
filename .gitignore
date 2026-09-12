@@ -1,0 +1,64 @@
+# Ignore everything without an extension.
+*
+!*.*
+!*/
+
+# Don't ignore makefiles.
+!makefile
+!Makefile
+
+# Don't ignore license files.
+!LICENSE
+
+# Nor the test framework submodule. A submodule is a gitlink rather than a directory as far as the
+# index is concerned, and the path has no extension, so the `*` above would ignore it and
+# `git submodule add` would refuse it.
+!libs/test
+
+# Ignore .txt files.
+*.txt
+
+# Ignore solution files.
+*atsln
+
+# Ignore CMake files other than CMakeLists.txt.
+*CMakeCache.txt
+*CMakeFiles
+*cmake_install.Makefile
+*cmake_install.cmake
+
+# Ignore Python cache.
+*__pycache__/
+
+# Ignore vscode directory.
+*vscode/
+*vs/
+
+# Ignore debug folder.
+*Debug/
+
+# Ignore compiler output that has an extension.
+*.o
+*.d
+*.out
+*.exe
+
+# Ignore metadata that Windows (through WSL) and macOS leave beside copied files.
+*:Zone.Identifier
+.DS_Store
+
+# Keep CMakeLists.txt, which the *.txt rule above would otherwise ignore.
+!CMakeLists.txt
+
+# Ignore your own exercise solutions, keeping each lecture's workspace README and test suite.
+# Your work sits in lectures/LNN/exercises/, where `make test` finds it; ignoring it keeps
+# `git status` quiet and a `git pull` of new course material clear of it. `git add -f` overrides
+# this for a file you do want to commit.
+lectures/*/exercises/*
+!lectures/*/exercises/README.md
+!lectures/*/exercises/test/
+
+# Ignore solution documents, e.g. exam/paper_a_solutions.md. Model answers to an exam are written
+# beside the paper but must not be published with the course material. Placed last so it also
+# applies inside the exercise workspaces re-included above; `git add -f` overrides it.
+*_solutions.md
