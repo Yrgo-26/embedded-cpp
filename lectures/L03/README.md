@@ -19,14 +19,14 @@
 ---
 
 ## Litteratur
-* Boken [Embedded C](../../info/README.md#litteratur), kapitel 10 *Encapsulation and Polymorphism in C*:
+* Referensboken [Embedded C](../../info/README.md#litteratur), kapitel 10 *Encapsulation and Polymorphism in C*:
     * §10.1.4 *Function pointers*.
     * §10.1.5 *Worked example: an interrupt-driven `gpio_t` with event flags*.
     * §10.1.2 *Hiding functions with `static`* - frivillig fördjupning: `static` på filnivå och
     funktionspekare som medlemmar i en strukt.
     * §10.2 *Review* - repetitionsfrågor till hela kapitlet.
     * §10.3 *Exercises*, övning 10.3 och 10.5 - frivilliga extraövningar.
-* Boken [Embedded C](../../info/README.md#litteratur), kapitel 9 *Structs as Drivers*:
+* Referensboken [Embedded C](../../info/README.md#litteratur), kapitel 9 *Structs as Drivers*:
     * §9.2 *Review* - repetitionsfrågor till hela kapitlet.
     * §9.3 *Exercises*, övning 9.5 *A pin-reservation table* - samma idé som pinregistret i
     [bilaga A](./appendix/a_exercises.md).

@@ -23,7 +23,7 @@
 ---
 
 ## Litteratur
-* Boken [Embedded C](../../info/README.md#litteratur), kapitel 9 *Structs as Drivers*:
+* Referensboken [Embedded C](../../info/README.md#litteratur), kapitel 9 *Structs as Drivers*:
     * §9.1.1 *Why bundle state*.
     * §9.1.2 *The `self` convention: a `GPIO` driver*.
     * §9.1.3 *Splitting the driver into `gpio.h` and `gpio.c`*.

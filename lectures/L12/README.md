@@ -19,13 +19,13 @@
 ---
 
 ## Litteratur
-* Boken [DevOps](../../info/README.md#litteratur), kapitel 1 *Git and Collaborative Development*:
+* Referensboken [DevOps](../../info/README.md#litteratur), kapitel 1 *Git and Collaborative Development*:
     * §1.1.3 *A branch-and-pull-request workflow*.
     * §1.1.5 *Code review*.
     * §1.2 *Review* - repetitionsfrågor till hela kapitlet.
     * §1.3 *Exercises*, övningsset *A Feature Branch and a Pull Request* och *Review* - lektionens
     övningar.
-* Boken [DevOps](../../info/README.md#litteratur), kapitel 3 *Code Formatting and Style Enforcement*:
+* Referensboken [DevOps](../../info/README.md#litteratur), kapitel 3 *Code Formatting and Style Enforcement*:
     * §3.1.1 *The problem formatting solves*.
     * §3.1.2 *clang-format*.
     * §3.1.4 *Enforcing it in CI*.

@@ -24,11 +24,11 @@
 ---
 
 ## Litteratur
-* Boken [DevOps](../../info/README.md#litteratur), kapitel 1 *Git and Collaborative Development*:
+* Referensboken [DevOps](../../info/README.md#litteratur), kapitel 1 *Git and Collaborative Development*:
     * §1.1.1 *Why version control*.
     * §1.1.2 *The commit graph*.
     * §1.1.4 *Good commits*.
-* Boken [DevOps](../../info/README.md#litteratur), kapitel 2 *Repository Organization*:
+* Referensboken [DevOps](../../info/README.md#litteratur), kapitel 2 *Repository Organization*:
     * §2.1 *Repository Organization* - inför att ni skapar ert repo för **P02**.
     * §2.2 *Example: This Repository's Top Level*.
     * §2.3 *Review* - repetitionsfrågor till hela kapitlet.

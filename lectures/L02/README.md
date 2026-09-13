@@ -17,7 +17,7 @@
 ---
 
 ## Litteratur
-* Boken [Embedded C](../../info/README.md#litteratur), kapitel 10 *Encapsulation and Polymorphism in C*:
+* Referensboken [Embedded C](../../info/README.md#litteratur), kapitel 10 *Encapsulation and Polymorphism in C*:
     * §10.1.1 *Why hide a struct's fields*.
     * §10.1.3 *Opaque structs*.
     * §10.3 *Exercises*, övning 10.1 - 10.2 - frivilliga extraövningar.

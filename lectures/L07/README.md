@@ -24,7 +24,7 @@
     * §3.1 *Inheritance in C++*.
     * §3.2 *Interfaces in C++*.
     * §3.3 *Example: An LED Interface in C++* - genomgås som exemplet `cpp_interface`.
-* Boken [Embedded C](../../info/README.md#litteratur), kapitel 10 *Encapsulation and Polymorphism in C*:
+* Referensboken [Embedded C](../../info/README.md#litteratur), kapitel 10 *Encapsulation and Polymorphism in C*:
     * §10.1.6 *Vtables: a `gpio_interface_t` interface* - samma exempel som `c_interface`, med
     delvis andra namn.
 

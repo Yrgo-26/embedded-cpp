@@ -1,10 +1,10 @@
 # Föreläsningar
 
 Material från föreläsningar. Lektioner markerade med **✓** har övningsuppgifter med en färdig
-testsvit: skriv din lösning i lektionens `exercises/` och kör `make test` från repots rot. Vilket
-kapitel i [kursens böcker](../info/README.md#litteratur) som hör till respektive lektion - Embedded C
-för L01 - L03, Modern Embedded C++ därefter och DevOps för Git och kodformatering i L11 - L12 -
-anges i lektionens README.
+testsvit: skriv din lösning i lektionens `exercises/` och kör `make test` från repots rot. Vilka
+kapitel och avsnitt i [kursboken](../info/README.md#litteratur), Modern Embedded C++, som hör till
+respektive lektion anges i lektionens README, liksom de kapitel ur referenslitteraturen som används:
+Embedded C i L01-L03 och L07, och DevOps i L11-L12.
 * [L01](./L01/README.md): Struktar i C (del I).
 * [L02](./L02/README.md): Struktar i C (del II).
 * [L03](./L03/README.md): Struktar i C (del III).
